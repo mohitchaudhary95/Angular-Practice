@@ -1,0 +1,28 @@
+<div class="container">
+<h1>Counter App</h1>
+
+<span>Count: {{ count }}</span>
+<div>
+  <button (click)="increment()">Increment</button>
+  <button (click)="reset()">Reset</button>
+  <button (click)="decrement()">Decrement</button>
+</div>
+</div>
+
+<div>
+  <button class=btn name="login" (click)="handleEvent($event)">login</button>
+</div>
+
+<div (mouseenter)="handleEvent($event)"
+     (mouseleave)="handleEvent($event)"
+     (mousemove)="handleEvent($event)">
+  <p>Hover over this div to see mouse events in action!</p>
+</div>
+
+<div>
+  <h1>Get and Set Value</h1>
+  <h1>User Name is: {{displayname}}</h1>
+  <input type="text" placeholder="Enter your Name" value="{{name}}" (input)="getName($event)" (focus)="getFocus($event)" (blur)="getBlur($event)"/>
+  <button (click)="showName()">Get Value</button>
+  <button (click)="setName()">set Value</button>
+</div>

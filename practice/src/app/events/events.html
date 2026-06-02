@@ -1,0 +1,27 @@
+<div>
+  <h1>Toggle Multiple divs(show and hide)</h1>
+  <button (click)="toggleShowAndHide($event)">Toggle</button>
+
+  @if(show){
+    <div style="background-color:orange; width:100px; height:100px;"></div>
+  }
+  <!-- @else{
+     <div style="background-color:green; width:100px; height:100px;"></div>
+  } -->
+</div>
+
+<div>
+  <input type="text" placeholder="Enter the Value" (input)="changeDiv($event)"/>
+  @if(value==1){
+      <div style="background-color:orange; width:100px; height:100px;"></div>
+  }
+  @else if(value==2){
+     <div style="background-color:green; width:100px; height:100px;"></div>
+  }
+  @else if(value==3){
+     <div style="background-color:blueviolet; width:100px; height:100px;"></div>
+  }
+  @else if(value>=4){
+     <div style="background-color:skyblue; width:100px; height:100px;"></div>
+  }
+</div>
