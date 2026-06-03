@@ -1,0 +1,18 @@
+<div style="display: flex; justify-content: center;">
+  <h1>Loops</h1>
+</div>
+
+
+  @for(user of users; track user){
+    <h2>{{user}}</h2>
+  }
+
+    @for(student of students; track student.name;){
+      <ul>
+        <li>Name: {{student.name}}</li>
+        <li>Age: {{student.age}}</li>
+        <li>Email: {{student.email}}</li>
+        <button (click)="getStudentInfo(student)" >Get Info</button>
+      </ul>
+
+  }
